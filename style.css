@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+body.light {
+  background: #f0f0f0;
+  color: #222;
+  filter: brightness(0.85);
+  transition: filter 0.3s ease, 0.3s ease, color 0.3s ease;
+}
+
+
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+  max-width: 500px;
+  width: 100%;
+  
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+#info-box p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+#refresh {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #1e3c72;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#refresh:hover {
+  background-color: #f0f0f0;
+}
+/* Toggle Switch Style */
+.switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  width: 50px;
+  height: 25px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  top: 2.5px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #1e3c72;
+}
+
+input:checked + .slider::before {
+  transform: translateX(25px);
+}
+
+/* Light theme overrides */
+body.light {
+  background: #f0f0f0;
+  color: #222;
+}
+
+body.light .container {
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+body.light #refresh,
+body.light #copy-info {
+  background-color: #1e3c72;
+  color: white;
+}
+#copy-info {
+  margin-top: 10px;
+  padding: 10px 25px;
+  background-color: #c1e5ff; /* nice green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 4px 6px #eaf6ff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#copy-info:hover {
+  background-color: b;
+  box-shadow: 0 6px 10px #1e3c72;
+}
+
+#copy-info:active {
+  background-color: lightblue;
+  box-shadow: 0 2px 4px rgb(15, 100, 129);
+  transform: translateY(2px);
+}
+
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevDetect - Device Info Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>🔍 DevDetect</h1>
+        <p class="description">See what your browser and device reveal about you</p>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle" />
+            <span class="slider"></span> Toggle Theme
+        </label>
+
+
+        <div id="info-box">
+            <p><strong>Operating System:</strong> <span id="os"></span></p>
+            <p><strong>Browser:</strong> <span id="browser"></span></p>
+            <p><strong>Screen Resolution:</strong> <span id="resolution"></span></p>
+            <p><strong>Time Zone:</strong> <span id="timezone"></span></p>
+            <p><strong>Current Time:</strong> <span id="current-time"></span></p>
+            <p><strong>Device Type:</strong> <span id="device-type"></span></p>
+            <p><strong>User Agent:</strong> <span id="user-agent"></span></p>
+            <p><strong>Page Uptime:</strong> <span id="uptime"></span></p>
+            <p><strong>Connection Type:</strong> <span id="connection"></span></p>
+
+
+
+        </div>
+
+        <button id="refresh">🔄 Refresh Info</button>
+        <button id="copy-info">📋 Copy Info</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
